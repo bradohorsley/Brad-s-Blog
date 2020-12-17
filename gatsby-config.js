@@ -12,13 +12,12 @@ module.exports = {
     },
   },
   plugins: [
-  {
-    resolve: `gatsby-source-contentful`,
-    options: {
-      spaceId: `5gnmb7b05x76`,
-      accessToken: `cBqx0h469XtbQIlvmsrnlNy4yRn5rZWe94bF8FhVFFU`,
-    },
-  },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/blog`,
+        name: `blog`,
+      },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
